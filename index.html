@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mmm!</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <header id="header">
+      <!-- 상단 로고 + 서치 아이콘 -->
+      <div class="search-bar">
+        <h1 class="logo"><i class="hidden">logo</i></h1>
+        <a href="#" class="search-ico"><i class="hidde">search-ico</i></a>
+      </div>
+    </header>
+    <main id="container">
+      <div class="random-theme">
+        <!-- 랜덤으로 들어오는 노래의 앨범 커버가 랜덤으로 들어감 총 4장-->
+        <div class="ran theme-bg">
+          <figure><img src="./img/random-img.jpg" alt="플리 이미지1" /></figure>
+          <figure><img src="./img/random-img.jpg" alt="플리 이미지2" /></figure>
+          <figure><img src="./img/random-img.jpg" alt="플리 이미지3" /></figure>
+          <figure><img src="./img/random-img.jpg" alt="플리 이미지4" /></figure>
+        </div>
+        <div class="ran theme-txt">
+          <!-- 플리 상세로 이동 -->
+          <a href="pli-detail.html">
+            <div class="title">
+              <p>랜덤 플레이 테마</p>
+              <h2>심장이 터질 정도로 힙한 노래</h2>
+              <span class="track">26개 트랙</span>
+            </div>
+          </a>
+        </div>
+        <!-- play버튼 누르면 해당 플리가 플레이됨.(플레이 페이지로 이동) -->
+        <a href="play.html" class="play-btn"><i class="hidden">버튼 누르면 플레이</i></a>
+
+        <!-- 하트버튼 누르면 해당 플리의 정보가 'my-liked-songs.html'의 플레이리스트 항목으로 들어감
+        change 버튼 누르면 플레이리스트 항목 중 랜덤으로 변경-->
+        <div class="plus-change-pli">
+          <button class="like-btn" type="button">
+            <i class="hidden">like</i>
+          </button>
+          <button class="change-btn" type="button">
+            <i class="hidden">change</i>
+          </button>
+        </div>
+      </div>
+    </main>
+    <nav>
+      <div class="inner">
+        <ul class="gnb">
+          <li>
+            <a href="./index.html">
+              <i class="hidden">home</i>
+            </a>
+          </li>
+          <li>
+            <a href="./my-liked-songs.html">
+              <i class="hidden">liked</i>
+            </a>
+          </li>
+          <li>
+            <a href="./explore.html">
+              <i class="hidden">explore</i>
+            </a>
+          </li>
+          <li>
+            <a href="./my-info.html">
+              <i class="hidden">my-info</i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
